@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="my">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>💕 ဘေဘီလေးရဲ့ မွေးနေ့ 💕</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;700&family=Great+Vibes&family=Poppins:wght@400;600&family=Padauk:wght@400;700&family=Sriracha&family=Titan+One&display=swap"
+        rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="heartsLayer"></div>
+
+    <!-- 🎵 Hidden audio - auto play -->
+    <audio id="bgMusic" src="Hap.mp3" loop preload="auto"></audio>
+
+    <div id="wrapper">
+        <!-- Flag -->
+        <div class="flag__birthday">
+            <img src="1.png" alt="" width="350" class="flag__left">
+            <img src="1.png" alt="" width="350" class="flag__right">
+        </div>
+
+        <!-- Main content -->
+        <div class="content">
+            <div class="left">
+                <div class="title">
+                    <h1 class="happy">
+                        <span style="--t: 4s;">H</span>
+                        <span style="--t: 4.2s;">a</span>
+                        <span style="--t: 4.4s;">p</span>
+                        <span style="--t: 4.6s;">p</span>
+                        <span style="--t: 4.8s;">y</span>
+                    </h1>
+                    <h1 class="birthday">
+                        <span style="--t: 5s;">B</span>
+                        <span style="--t: 5.2s;">i</span>
+                        <span style="--t: 5.4s;">r</span>
+                        <span style="--t: 5.6s;">t</span>
+                        <span style="--t: 5.8s;">h</span>
+                        <span style="--t: 6s;">d</span>
+                        <span style="--t: 6.2s;">a</span>
+                        <span style="--t: 6.4s;">y</span>
+                    </h1>
+                    <div class="hat">
+                        <img src="hat.png" alt="" width="130">
+                    </div>
+                </div>
+                <div class="date__of__birth">
+                    <span></span>
+                </div>
+                <div class="btn">
+                    <button id="btn__letter">
+                        <div class="mail">
+                            💌 ဒီနေရာ နှိပ်ပါ ဘေဘီ 💕
+                            <i class="fa-regular fa-envelope"></i>
+                        </div>
+                    </button>
+                </div>
+            </div>
+
+            <div class="right">
+                <div class="box__account">
+                    <div class="image">
+                        <img src="unnamed.png" alt="ဘေဘီလေး">
+                    </div>
+                    <div class="name">
+                        <i class="fa-solid fa-heart"></i>
+                        <span>ဘေဘီလေး 💕</span>
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                    <div class="balloon_one">
+                        <img width="100px" src="balloon1.png" alt="">
+                    </div>
+                    <div class="balloon_two">
+                        <img width="100px" src="balloon2.png" alt="">
+                    </div>
+                </div>
+                <div class="cricle">
+                    <div class="text__cricle">
+                        <span style="--i: 1;">h</span>
+                        <span style="--i: 2;">a</span>
+                        <span style="--i: 3;">p</span>
+                        <span style="--i: 4;">p</span>
+                        <span style="--i: 5;">y</span>
+                        <span style="--i: 6;">-</span>
+                        <span style="--i: 7;">b</span>
+                        <span style="--i: 8;">i</span>
+                        <span style="--i: 9;">r</span>
+                        <span style="--i: 10;">t</span>
+                        <span style="--i: 11;">h</span>
+                        <span style="--i: 12;">d</span>
+                        <span style="--i: 13;">a</span>
+                        <span style="--i: 14;">y</span>
+                        <span style="--i: 15;">-</span>
+                    </div>
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+            </div>
+        </div>
+
+        <!-- Decorations -->
+        <div class="decorate_star star1" style="--t: 15s;"></div>
+        <div class="decorate_star star2" style="--t: 15.2s;"></div>
+        <div class="decorate_star star3" style="--t: 15.4s;"></div>
+        <div class="decorate_star star4" style="--t: 15.6s;"></div>
+        <div class="decorate_star star5" style="--t: 15.8s;"></div>
+        <div class="decorate_flower--one" style="--t: 15s;">
+            <img width="20" src="decorate_flower.png" alt="">
+        </div>
+        <div class="decorate_flower--two" style="--t: 15.3s;">
+            <img width="20" src="decorate_flower.png" alt="">
+        </div>
+        <div class="decorate_flower--three" style="--t: 15.6s;">
+            <img width="20" src="decorate_flower.png" alt="">
+        </div>
+        <div class="decorate_bottom">
+            <img src="decorate.png" alt="" width="100">
+        </div>
+        <div class="smiley__icon">
+            <img src="smiley_icon.png" alt="" width="100">
+        </div>
+
+        <!-- ==========================================
+             💌 ENVELOPE LETTER
+             ========================================== -->
+        <div class="envelope-overlay" id="envelopeOverlay">
+            <div class="envelope-wrapper">
+                <div class="envelope" id="envelope">
+                    <div class="envelope-back"></div>
+
+                    <div class="letter-paper" id="letterPaper">
+                        <div class="letter-inner">
+                            <div class="letter-photo-top">
+                                <div class="letter-avatar">
+                                    <img src="unnamed.png" alt="ဘေဘီလေး">
+                                </div>
+                                <div class="letter-avatar-deco">💕</div>
+                            </div>
+
+                            <h2 class="letter-title">
+                                <i class="fa-solid fa-heart"></i>
+                                ဘေဘီလေးအတွက်
+                                <i class="fa-solid fa-heart"></i>
+                            </h2>
+                            <div class="letter-divider">❦ ❦ ❦</div>
+
+                            <p class="scroll-hint">
+                                👇 စာလေး အောက်ဆွဲဖတ်ပါနော် 💕
+                            </p>
+
+                            <div class="letter-content">
+                                <p class="letter-greeting">ချစ်လှစွာသော ဘေဘီလေးရေ...</p>
+
+                                <p>
+                                    ဒီနေ့က ဘေဘီလေးရဲ့ မွေးနေ့ဆိုတော့ ကိုကို့နှလုံးသားထဲမှာ
+                                    စကားလုံးတွေ အများကြီး ဖြစ်ပေါ်နေတယ်။ ဘယ်လိုစပြီး ပြောရမလဲတောင်
+                                    မသိတော့ဘူး ဘေဘီလေးရေ။
+                                </p>
+
+                                <p>
+                                    ဘေဘီလေး ကိုကို့ဘဝထဲ ရောက်လာတဲ့နေ့ကို ကိုကို အမြဲ မှတ်မိနေတယ်။
+                                    အဲဒီနေ့ကတည်းက ကိုကို့ရဲ့ ကမ္ဘာလေး လုံးဝ ပြောင်းလဲသွားတယ်။
+                                    ဘေဘီလေးရဲ့ အပြုံးလေးတွေက ကိုကို့အတွက် နေ့တိုင်း နေရောင်လေးပါ။
+                                    ဘေဘီလေး ရယ်လိုက်ရင် ကိုကို့ရင်ထဲမှာ ပန်းတွေ ပွင့်သလိုပဲ။
+                                </p>
+
+                                <p>
+                                    ဘေဘီလေး သိတယ်မလား? ကိုကို ဘေဘီလေးကို ပထမဆုံး မြင်လိုက်တဲ့
+                                    အချိန်လေးကို အခုထိ မှတ်မိနေတယ်။ ဘေဘီလေးရဲ့ မျက်လုံးလေးတွေ၊
+                                    အပြုံးလေးတွေ၊ စကားပြောတဲ့အသံလေးတွေ — အားလုံးကို
+                                    ကိုကို့နှလုံးသားထဲမှာ စွဲမှတ်ထားတယ်။
+                                </p>
+
+                                <p>
+                                    ဘေဘီလေး တစ်ခါတလေ ဝမ်းနည်းနေတဲ့အခါ ကိုကို့ရင်ထဲမှာ
+                                    အရမ်း၀မ်းနည်းတယ် ဘေဘီလေး သိလား? ဘေဘီလေးရဲ့ မျက်ရည်တစ်စက်က
+                                    ကိုကို့ရဲ့ နှလုံးသားကို ထိခိုက်စေတယ်။ ဒါကြောင့်
+                                    ဘေဘီလေး ဘယ်တော့မှ ဝမ်းမနည်းပါစေနဲ့။
+                                    ကိုကို အမြဲ ဘေးမှာ ရှိနေမယ်နော်။
+                                </p>
+
+                                <p>
+                                    ဘေဘီလေးရဲ့ အိပ်မက်တွေကို ကိုကို သိတယ်။ ဘေဘီလေး
+                                    ဖြစ်ချင်တဲ့အရာတွေ အားလုံး ဖြစ်လာပါစေ။ ဘေဘီလေး လုပ်ချင်တဲ့
+                                    အလုပ်တွေ အားလုံး အောင်မြင်ပါစေ။ ကိုကို အမြဲ ဘေးမှာ
+                                    အားပေးနေမယ်။ ဘေဘီလေး တစ်ယောက်တည်း မဟုတ်ဘူးနော် —
+                                    ကိုကို အမြဲ ရှိတယ်။
+                                </p>
+
+                                <p>
+                                    ဒီနှစ်မှာ ဘေဘီလေးရဲ့ ဘဝထဲ ပျော်ရွှင်မှုတွေ၊ အောင်မြင်မှုတွေ၊
+                                    ကောင်းချီးတွေ ပြည့်နှက်နေပါစေ။ ဘေဘီလေး ကျန်းမာပါစေ။
+                                    ဘေဘီလေးရဲ့ အပြုံးလေးက ဘယ်တော့မှ မပျောက်ပါစေနဲ့။
+                                </p>
+
+                                <p>
+                                    ဘေဘီလေးကို ကိုကို ဘယ်လောက်ချစ်တယ်ဆိုတာ စကားလုံးတွေနဲ့
+                                    ဖော်ပြလို့ မကုန်နိုင်ဘူး။ ဒါပေမယ့် ကိုကို့ရဲ့ နှလုံးသားထဲမှာ
+                                    ဘေဘီလေးအတွက် နေရာတစ်ခု အမြဲ ရှိနေတယ်။
+                                    အဲဒီနေရာက ဘေဘီလေးအတွက်ပဲ ဖြစ်တယ်။
+                                </p>
+
+                                <p>
+                                    နောက်ဆုံး ပြောချင်တာက — ဘေဘီလေး အမြဲ ပျော်ရွှင်ပါစေ။
+                                    
+                                    အမြဲ အတူတူ ရှိနေမယ်။ 💕
+                                </p>
+
+                                <p class="letter-final">
+                                    မွေးနေ့ မှာ ပျော်ရွှင်ပါစေ ကိုကို့အချစ် 💖<br>
+                                    ဘေဘီလေး အမြဲ ပျော်ရွှင်နေပါစေ 💕
+                                </p>
+
+                                <p class="letter-sign">
+                                    အမြဲ ချစ်နေတဲ့ <br>
+                                    <span>ကိုကို 💕</span>
+                                </p>
+                            </div>
+
+                            <div class="letter-deco-heart heart-1">💕</div>
+                            <div class="letter-deco-heart heart-2">💖</div>
+                            <div class="letter-deco-heart heart-3">🌸</div>
+                        </div>
+                    </div>
+
+                    <div class="envelope-top"></div>
+
+                    <div class="envelope-front">
+                        <div class="envelope-heart">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+                        <div class="envelope-address">
+                            <span>ဘေဘီလေးဆီသို့</span>
+                        </div>
+                        <div class="envelope-stamp">
+                            <span>💌</span>
+                        </div>
+                    </div>
+
+                    <div class="envelope-left"></div>
+                    <div class="envelope-right"></div>
+                </div>
+
+                <div class="envelope-actions" id="envelopeActions">
+                    <button class="btn-view-album" id="btnViewAlbum">
+                        <i class="fa-solid fa-images"></i>
+                        အမှတ်တရ ပုံကြည့်ရန်
+                        <i class="fa-solid fa-heart"></i>
+                    </button>
+                </div>
+
+                <p class="reading-hint" id="readingHint">
+                    💕 စာလေး အောက်ဆွဲဖတ်လို့ရတယ်နော် 💕
+                </p>
+
+                <button class="envelope-close" id="envelopeClose">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- ==========================================
+             💕 ROMANTIC PHOTO ALBUM
+             ========================================== -->
+        <div class="box__album" id="boxAlbum">
+            <div class="album-hearts-bg" id="albumHeartsBg"></div>
+
+            <button class="close-album" onclick="closeAlbum()">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+            <div class="romantic-wrapper">
+
+                <div class="romantic-header">
+                    <div class="header-line"></div>
+                    <h2 class="romantic-title">
+                        <i class="fa-solid fa-heart"></i>
+                        အမှတ်တရလေးများ
+                        <i class="fa-solid fa-heart"></i>
+                    </h2>
+                    <p class="romantic-subtitle">— ကိုကို &amp; ဘေဘီလေး —</p>
+                    <div class="header-line"></div>
+                </div>
+
+                <div class="romantic-photo-card">
+                    <div class="card-corner top-left">💕</div>
+                    <div class="card-corner top-right">💕</div>
+                    <div class="card-corner bottom-left">💕</div>
+                    <div class="card-corner bottom-right">💕</div>
+
+                    <div class="photo-stack" id="photoStack"></div>
+
+                    <div class="heart-seal">💖</div>
+                </div>
+
+                <div class="romantic-caption" id="galaxyCaption">
+                    💕 အမှတ်တရလေးများ
+                </div>
+
+                <div class="romantic-nav">
+                    <button class="rom-btn prev" onclick="prevPhoto()" title="အရင်ပုံ">
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </button>
+
+                    <div class="rom-page-num">
+                        <span class="page-current" id="pageCurrent">1</span>
+                        <span class="page-divider">/</span>
+                        <span class="page-total" id="pageTotal">8</span>
+                    </div>
+
+                    <button class="rom-btn next" onclick="nextPhoto()" title="နောက်ပုံ">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </button>
+                </div>
+
+                <div class="rom-dots" id="galaxyDots"></div>
+
+                <p class="rom-hint">💕 ◀ ▶ နှိပ်ပြီ ကြည့်ပါနော် 💕</p>
+
+            </div>
+        </div>
+
+        <!-- ==========================================
+             💗 LOVE POPUP
+             ========================================== -->
+        <div class="love-popup" id="lovePopup">
+            <div class="love-popup-content">
+                <div class="love-popup-heart">💖</div>
+                <p class="love-popup-text" id="lovePopupText">ဘေဘီလေးကို အရမ်းချစ်တယ် 💕</p>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        /* ==========================================
+           🎵 MUSIC — Auto play ဝင်တာနဲ့ စ
+           ========================================== */
+        const bgMusic = document.getElementById('bgMusic');
+        bgMusic.volume = 0.7;
+
+        let musicStarted = false;
+
+        function startMusic() {
+            if (musicStarted) return;
+            bgMusic.play().then(() => {
+                musicStarted = true;
+                console.log('🎵 Music playing');
+            }).catch(err => {
+                console.log('Auto play blocked:', err);
+            });
+        }
+
+        window.addEventListener('load', function () {
+            startMusic();
+        });
+
+        const events = ['click', 'touchstart', 'keydown', 'scroll'];
+        function tryAutoPlay() {
+            startMusic();
+            if (musicStarted) {
+                events.forEach(evt => document.removeEventListener(evt, tryAutoPlay));
+            }
+        }
+        events.forEach(evt => document.addEventListener(evt, tryAutoPlay, { passive: true }));
+
+        const musicInterval = setInterval(() => {
+            if (!musicStarted) {
+                startMusic();
+            } else {
+                clearInterval(musicInterval);
+            }
+        }, 1000);
+
+        /* ==========================================
+           💕 FLOATING HEARTS + ROSE PETALS
+           ========================================== */
+        const heartsLayer = document.getElementById('heartsLayer');
+        const floatEmojis = ['💖', '💕', '💗', '💓', '💝', '🌸', '🌹', '🌺', '✨', '💘'];
+        const petalColors = ['#ff6b9d', '#ff8fab', '#ffb3c1', '#ff4d8d'];
+
+        function createFloatingHeart() {
+            const el = document.createElement('div');
+            el.className = 'floating-item';
+            const isPetal = Math.random() > 0.6;
+
+            if (isPetal) {
+                el.classList.add('rose-petal');
+                el.style.background = `radial-gradient(circle at 30% 30%, ${petalColors[Math.floor(Math.random()*petalColors.length)]}, transparent)`;
+            } else {
+                el.textContent = floatEmojis[Math.floor(Math.random() * floatEmojis.length)];
+            }
+
+            el.style.left = Math.random() * 100 + 'vw';
+            el.style.fontSize = (Math.random() * 20 + 14) + 'px';
+            el.style.animationDuration = (Math.random() * 8 + 8) + 's';
+            el.style.animationDelay = Math.random() * 3 + 's';
+            el.style.opacity = Math.random() * 0.5 + 0.5;
+
+            heartsLayer.appendChild(el);
+            setTimeout(() => el.remove(), 18000);
+        }
+
+        setInterval(createFloatingHeart, 500);
+        for (let i = 0; i < 20; i++) setTimeout(createFloatingHeart, i * 200);
+
+        /* ==========================================
+           ⚡ ရက်စွဲ ရိုက်တဲ့ Animation
+           ========================================== */
+        let datetxt = "21 September";
+        let charArrDate = datetxt.split('');
+        let currentIndex = 0;
+        let date__of__birth = document.querySelector(".date__of__birth span");
+
+        setTimeout(function () {
+            let timeDatetxt = setInterval(function () {
+                if (currentIndex < charArrDate.length) {
+                    date__of__birth.textContent += charArrDate[currentIndex];
+                    currentIndex++;
+                } else {
+                    let i = document.createElement("i");
+                    i.className = "fa-solid fa-star";
+                    document.querySelector(".date__of__birth").prepend(i);
+                    document.querySelector(".date__of__birth").appendChild(i.cloneNode(true));
+                    clearInterval(timeDatetxt);
+                }
+            }, 100);
+        }, 3000);
+
+        /* ==========================================
+           💌 စာအိတ် ဖွင့်/ပိတ်
+           ========================================== */
+        const envelopeOverlay = document.getElementById('envelopeOverlay');
+        const envelope = document.getElementById('envelope');
+        const envelopeClose = document.getElementById('envelopeClose');
+        const btnLetter = document.getElementById('btn__letter');
+        const btnViewAlbum = document.getElementById('btnViewAlbum');
+        const readingHint = document.getElementById('readingHint');
+        const envelopeActions = document.getElementById('envelopeActions');
+
+        btnLetter.addEventListener('click', function () {
+            startMusic();
+            envelopeOverlay.classList.add('active');
+            setTimeout(() => {
+                envelope.classList.add('open');
+                setTimeout(() => {
+                    readingHint.classList.add('show');
+                    envelopeActions.classList.add('show');
+                    createHeartBurst();
+                }, 800);
+            }, 400);
+        });
+
+        btnViewAlbum.addEventListener('click', function () {
+            envelope.classList.remove('open');
+            readingHint.classList.remove('show');
+            envelopeActions.classList.remove('show');
+            setTimeout(() => {
+                envelopeOverlay.classList.remove('active');
+                setTimeout(openAlbum, 400);
+            }, 500);
+        });
+
+        envelopeClose.addEventListener('click', function () {
+            envelope.classList.remove('open');
+            readingHint.classList.remove('show');
+            envelopeActions.classList.remove('show');
+            setTimeout(() => {
+                envelopeOverlay.classList.remove('active');
+            }, 500);
+        });
+
+        envelopeOverlay.addEventListener('click', function (e) {
+            if (e.target === envelopeOverlay) {
+                envelope.classList.remove('open');
+                readingHint.classList.remove('show');
+                envelopeActions.classList.remove('show');
+                setTimeout(() => {
+                    envelopeOverlay.classList.remove('active');
+                }, 500);
+            }
+        });
+
+        document.addEventListener('keydown', function (e) {
+            if (e.key === 'Escape' && envelopeOverlay.classList.contains('active')) {
+                envelope.classList.remove('open');
+                readingHint.classList.remove('show');
+                envelopeActions.classList.remove('show');
+                setTimeout(() => {
+                    envelopeOverlay.classList.remove('active');
+                }, 500);
+            }
+        });
+
+        /* ==========================================
+           💗 Heart burst
+           ========================================== */
+        function createHeartBurst() {
+            for (let i = 0; i < 15; i++) {
+                setTimeout(createFloatingHeart, i * 50);
+            }
+        }
+
+        /* ==========================================
+           📸 ROMANTIC ALBUM
+           ========================================== */
+        const photos = [
+            { src: "photo1.jpg", caption: "💋 မျောက်မလေး" },
+            { src: "photo2.jpg", caption: "🌙 သရဲဂိမ်းဆော့တုန်းက ရိုက်ထားတာ" },
+            { src: "photo3.jpg", caption: "💌 ဘေဘီလေး ရေးထားတဲ့ စာလေး — Akira" },
+            { src: "photo4.jpg", caption: "💬 ဆဲတာလေးက ချစ်ဖို့ကောင်းတယ် ကိုကိုကလေး" },
+            { src: "photo5.jpg", caption: "🎮 Heartopia ဆော့တုန်းက အူတတ်" },
+            { src: "photo6.jpg", caption: "🌸 သိပ်လှတဲ့ ကိုကိုဘေဘီလေး" },
+            { src: "photo7.jpg", caption: "⚔️ AI ပုံပေးမယ် သဘောကျတယ်" },
+            { src: "photo8.jpg", caption: "💑 ML edit လုပ်ဖို့ ဆိုပြီ ရိုက်ထားတုန်းက ss" }
+        ];
+
+        let currentPhotoIndex = 0;
+        let isAnimating = false;
+
+        function initAlbum() {
+            const stack = document.getElementById('photoStack');
+            if (!stack) return;
+
+            stack.innerHTML = '';
+
+            photos.forEach((photo, index) => {
+                const img = document.createElement('img');
+                img.src = photo.src;
+                img.alt = photo.caption;
+                img.className = 'album-photo';
+                img.dataset.index = index;
+                img.loading = 'lazy';
+                img.draggable = false;
+
+                img.onerror = function () {
+                    this.style.display = 'none';
+                    const ph = document.createElement('div');
+                    ph.className = 'album-placeholder';
+                    ph.dataset.index = index;
+                    ph.textContent = '📷';
+                    stack.appendChild(ph);
+                };
+
+                if (index === 0) img.classList.add('active');
+                stack.appendChild(img);
+            });
+
+            const dotsContainer = document.getElementById('galaxyDots');
+            if (dotsContainer) {
+                dotsContainer.innerHTML = '';
+                photos.forEach((_, index) => {
+                    const dot = document.createElement('div');
+                    dot.className = 'rom-dot' + (index === 0 ? ' active' : '');
+                    dot.onclick = () => goToPhoto(index);
+                    dotsContainer.appendChild(dot);
+                });
+            }
+
+            const totalEl = document.getElementById('pageTotal');
+            if (totalEl) totalEl.textContent = photos.length;
+
+            updateUI();
+        }
+
+        function updateUI() {
+            const caption = document.getElementById('galaxyCaption');
+            const current = document.getElementById('pageCurrent');
+            const dots = document.querySelectorAll('.rom-dot');
+
+            if (caption) {
+                caption.style.animation = 'none';
+                void caption.offsetWidth;
+                caption.style.animation = 'captionSlide 0.5s';
+                caption.textContent = photos[currentPhotoIndex].caption;
+            }
+
+            if (current) current.textContent = currentPhotoIndex + 1;
+
+            dots.forEach((dot, i) => {
+                dot.classList.toggle('active', i === currentPhotoIndex);
+            });
+        }
+
+        function showPhoto(index, direction = 'next') {
+            if (isAnimating || index === currentPhotoIndex) return;
+            if (index < 0 || index >= photos.length) return;
+
+            isAnimating = true;
+
+            const allItems = document.querySelectorAll('.album-photo, .album-placeholder');
+            const currentItem = allItems[currentPhotoIndex];
+            const nextItem = allItems[index];
+
+            if (!currentItem || !nextItem) {
+                isAnimating = false;
+                return;
+            }
+
+            currentItem.classList.remove('active');
+            currentItem.classList.add(direction === 'next' ? 'exit-next' : 'exit-prev');
+
+            setTimeout(() => {
+                currentItem.classList.remove('exit-next', 'exit-prev');
+                nextItem.classList.add('active');
+                nextItem.classList.remove('exit-next', 'exit-prev');
+
+                currentPhotoIndex = index;
+                updateUI();
+                createHeartBurst();
+
+                setTimeout(() => {
+                    isAnimating = false;
+                }, 500);
+            }, 250);
+        }
+
+        function nextPhoto() {
+            const next = currentPhotoIndex < photos.length - 1 ? currentPhotoIndex + 1 : 0;
+            showPhoto(next, 'next');
+        }
+
+        function prevPhoto() {
+            const prev = currentPhotoIndex > 0 ? currentPhotoIndex - 1 : photos.length - 1;
+            showPhoto(prev, 'prev');
+        }
+
+        function goToPhoto(index) {
+            if (index === currentPhotoIndex) return;
+            const direction = index > currentPhotoIndex ? 'next' : 'prev';
+            showPhoto(index, direction);
+        }
+
+        function openAlbum() {
+            const album = document.getElementById('boxAlbum');
+            if (album) {
+                album.classList.add('active');
+                currentPhotoIndex = 0;
+                initAlbum();
+                createAlbumHearts();
+                createHeartBurst();
+            }
+        }
+
+        function closeAlbum() {
+            const album = document.getElementById('boxAlbum');
+            if (album) {
+                album.classList.remove('active');
+            }
+        }
+
+        function createAlbumHearts() {
+            const heartsBg = document.getElementById('albumHeartsBg');
+            if (!heartsBg) return;
+
+            heartsBg.innerHTML = '';
+            const heartEmojis = ['💕', '💖', '💗', '💓', '💝', '🌸', '🌹'];
+
+            for (let i = 0; i < 25; i++) {
+                const heart = document.createElement('div');
+                heart.className = 'album-heart-float';
+                heart.textContent = heartEmojis[Math.floor(Math.random() * heartEmojis.length)];
+                heart.style.left = Math.random() * 100 + '%';
+                heart.style.fontSize = (Math.random() * 15 + 15) + 'px';
+                heart.style.animationDelay = (Math.random() * 5) + 's';
+                heart.style.animationDuration = (Math.random() * 5 + 6) + 's';
+                heartsBg.appendChild(heart);
+            }
+        }
+
+        document.addEventListener('keydown', function (e) {
+            const album = document.getElementById('boxAlbum');
+            if (!album || !album.classList.contains('active')) return;
+
+            if (e.key === 'ArrowRight') nextPhoto();
+            if (e.key === 'ArrowLeft') prevPhoto();
+            if (e.key === 'Escape') closeAlbum();
+        });
+
+        /* ==========================================
+           💗 LOVE POPUP
+           ========================================== */
+        const loveMessages = [
+            "💕 ဘေဘီလေးကို အရမ်းချစ်တယ်",
+            "🌸 ဘေဘီလေးက ကိုကို့ကမ္ဘာလေး",
+            "💖 ဘေဘီလေးရဲ့ အပြုံးက ကိုကို့ပျော်ရွှင်မှု",
+            "🌹 ဘေဘီလေးနဲ့ တွေ့ခဲ့တာ ကိုကို့ကံကောင်းမှု",
+            "✨ ဘေဘီလေး အမြဲ ပျော်ပါစေ",
+            "💘 ဘေဘီလေးကို ဘယ်တော့မှ မစွန့်လွှတ်ဘူး"
+        ];
+
+        let lovePopupIndex = 0;
+        const lovePopup = document.getElementById('lovePopup');
+        const lovePopupText = document.getElementById('lovePopupText');
+
+        function showLovePopup() {
+            if (!lovePopup || !lovePopupText) return;
+            lovePopupText.textContent = loveMessages[lovePopupIndex];
+            lovePopupIndex = (lovePopupIndex + 1) % loveMessages.length;
+            lovePopup.classList.add('show');
+            setTimeout(() => {
+                lovePopup.classList.remove('show');
+            }, 4000);
+        }
+
+        const originalOpenAlbum = openAlbum;
+        window.openAlbum = function() {
+            originalOpenAlbum();
+            setTimeout(showLovePopup, 2500);
+        };
+
+        /* ==========================================
+           Global functions
+           ========================================== */
+        window.closeAlbum = closeAlbum;
+        window.nextPhoto = nextPhoto;
+        window.prevPhoto = prevPhoto;
+        window.goToPhoto = goToPhoto;
+    </script>
+
+</body>
+</html>
